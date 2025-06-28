@@ -44,14 +44,27 @@ I developed this **Currency Overlay Simulation Engine** because I was curious ab
 
 ## 📊 The Charts That Tell the Story
 
-I built **8 main visualizations** because the data is useless without good charts:
+I built **8 main visualizations** because the data is useless without good charts. Here are some key examples:
 
-1. **FX Rates Evolution** - See how each currency moved over the 180 days
-2. **Portfolio Value Evolution** - Compare how different hedging strategies actually performed
+### **FX Rates Evolution**
+![FX Rates Evolution](images/fx_rates_evolution.png)
+*How each currency pair moved over the 180-day simulation period - you can see the EM basket's higher volatility and JPY's relative stability*
+
+### **Portfolio Performance by Strategy**
+![Portfolio Performance](images/portfolio_performance.png)
+*This is where it gets interesting - comparing unhedged, 50% hedged, and fully hedged strategies. Notice how partial hedging actually outperformed in this scenario*
+
+### **Risk-Return Analysis**
+![Risk-Return Profile](images/risk_return_profile.png)
+*The classic risk vs return trade-off visualization - shows exactly what you're getting (and giving up) with each hedging approach*
+
+**Full set of 8 main visualizations includes**:
+1. **FX Rates Evolution** - See how each currency moved over the 180 days ✓
+2. **Portfolio Value Evolution** - Compare how different hedging strategies actually performed ✓
 3. **Daily Returns Distribution** - Visualize the risk you're really taking with each approach
 4. **Rolling Volatility Analysis** - Watch volatility change over time (spoiler: it clusters)
 5. **Value at Risk Comparison** - See your maximum expected losses side by side
-6. **Risk-Return Profile** - The classic risk vs return scatter plot that actually matters
+6. **Risk-Return Profile** - The classic risk vs return scatter plot that actually matters ✓
 7. **Currency Contribution Analysis** - Find out which currencies are helping vs hurting
 8. **Drawdown Analysis** - See your worst losing streaks and how long they lasted
 
