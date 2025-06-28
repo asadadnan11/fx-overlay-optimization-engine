@@ -182,4 +182,8 @@ This was a fun project that taught me a lot about FX markets and hedging strateg
 - **Multi-asset**: Add commodity and bond exposures
 - **Regime detection**: Build in automatic market regime identification
 
+## About Me
+
+I’m Asad Adnan, a Master’s in Business Analytics graduate from the University of Notre Dame with a multidisciplinary background in economics, political science, and data science. I’m deeply interested in how global markets, policy, and human behavior intersect — and how data-driven strategies can be used to manage risk and uncover opportunity in volatile environments.
+
 **Skills Demonstrated**: Python, Financial Modeling, Risk Management, GARCH/ARIMA, Portfolio Optimization, Data Visualization, Strategic Analysis 
