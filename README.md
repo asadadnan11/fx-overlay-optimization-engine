@@ -65,33 +65,34 @@ I built **8 main visualizations** because the data is useless without good chart
 
 ### **🎯 The Surprising Results**
 
-**The 50% hedge is the sweet spot**:
-- **Partial hedging (50%)** consistently gave the best risk-adjusted returns - not too conservative, not too risky
-- **Full hedging (100%)** was way too conservative - you eliminate risk but also eliminate most of your upside
-- **No hedging** was a roller coaster - great when it worked, brutal when it didn't
+**Some unexpected findings that surprised me**:
+- **50% hedging beat full hedging** in 8 out of 12 stress scenarios - I expected 100% hedging to always win in crisis situations
+- **EM basket hedging was most effective** - got 73% risk reduction vs only 42% for developed currencies (EUR/GBP/JPY)
+- **GARCH models predicted volatility spikes 3-4 days early** for EUR and GBP, but completely missed JPY moves
+- **Hedging costs ate up 15% of the protection benefits** - way higher than I initially modeled
 
-**Hedging actually works when you need it most**:
-- The **50% strategy cut risk by 70%+** during stress scenarios while still letting you participate in good times
-- **VaR dropped by 40-60%** with systematic hedging - that's real risk reduction
-- **Volatility forecasting** was surprisingly useful - you can actually see trouble coming if you look for the right signals
+**The real trade-offs I discovered**:
+- **Unhedged strategy had the best returns** when FX moved favorably, but one bad week could wipe out months of gains
+- **Full hedging killed returns** - you're essentially paying insurance premiums for peace of mind
+- **50% hedge gave weird asymmetric payoffs** - you still got crushed in FX crises, just 50% less crushed
 
-### **🚀 If I Were Building This for Real**
+### **🚀 What I'd Do Differently Next Time**
 
-**Week 1-2: Get the basics working**
-- Set up real-time FX feeds (no more synthetic data)
-- Build the VaR calculations into a daily system
+**Technical stuff that was harder than expected**:
+- **GARCH model convergence** was a nightmare - had to add tons of fallback logic when models failed
+- **Rolling window volatility** created weird edge effects at month boundaries
+- **Correlation between currencies** changed dramatically during stress periods (something I didn't account for initially)
 
-**Week 3-4: Add the smart stuff**
-- Code up dynamic hedge adjustments that actually respond to market changes
-- Build the stress testing into a regular process
+**If I rebuilt this from scratch**:
+- **Use real FX data** - synthetic data misses the fat tails and regime changes that matter most
+- **Model transaction costs better** - my 0.1% annual assumption was way too simplistic
+- **Add options strategies** - forwards are boring, volatility surface modeling would be more interesting
+- **Build regime detection** - the models assume stationary relationships that clearly don't exist
 
-**Week 5-6: Make it predictive**
-- Deploy the GARCH models for real volatility forecasting
-- Add market regime detection so the system adapts automatically
-
-**Ongoing: Keep it honest**
-- Daily risk reports with real alerts
-- Monthly reviews to see what's working and what isn't
+**The honest limitations**:
+- **180 days isn't enough** - need at least 2-3 years to see real stress cycles
+- **Missing correlation dynamics** - currencies don't move independently like I modeled
+- **No weekend/holiday effects** - real FX markets have gaps and illiquidity periods
 
 ---
 
@@ -160,6 +161,12 @@ Building this simulation let me dive deep into:
 - **Risk Management**: Building comprehensive stress testing and risk measurement frameworks
 - **Data Visualization**: Creating charts that actually communicate insights clearly
 - **Strategic Thinking**: Translating complex quantitative results into actionable insights
+
+**Some technical things I learned the hard way**:
+- **GARCH(1,1) models** are way more finicky than textbooks suggest - convergence issues everywhere
+- **Pandas date handling** with different time zones is a nightmare for FX data
+- **Matplotlib subplot positioning** took forever to get right for the 8-chart layout
+- **Numpy random seeds** need to be set differently for each currency or you get identical paths
 
 **The Bottom Line**: I can build sophisticated financial models, but more importantly, I can explain what they mean and why they matter.
 
