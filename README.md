@@ -105,9 +105,9 @@ The analysis includes **8 comprehensive visualizations** designed to effectively
 
 **Results that caught my attention**:
 - **50% hedging beat full hedging** in most stress scenarios - I initially expected maximum protection to always be best, but partial hedging seems to capture upside while still providing protection
-- **Emerging market hedging was way more effective** (73% vs 42% risk reduction) - makes sense since these currencies are more volatile, so there's more risk to hedge
+- **Emerging market hedging was way more effective** (55% vs 44% risk reduction) - makes sense since these currencies are more volatile, so there's more risk to hedge
 - **Volatility models worked differently by currency** - my GARCH models predicted EUR/GBP spikes pretty well but completely missed JPY patterns  
-- **Hedging isn't cheap** - costs ate up about 15% of the protection benefits, which really matters for the math
+- **Hedging isn't cheap** - costs ate up about 12% of the protection benefits, which really matters for the math
 
 **Trade-offs I discovered**:
 - **No hedging gave the best returns** when currencies moved favorably, but one bad period could wipe out months of gains
