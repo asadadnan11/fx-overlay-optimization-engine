@@ -1,6 +1,6 @@
 # Currency Overlay Simulation Engine
 
-## 🎯 Project Overview
+## Project Overview
 
 This **Currency Overlay Simulation Engine** represents my deep dive into quantitative finance, motivated by curiosity about how currency hedging actually works in practice. After observing how major events like Brexit and trade wars create massive FX swings, I wanted to understand whether systematic hedging strategies could actually protect portfolios.
 
@@ -8,41 +8,41 @@ This **Currency Overlay Simulation Engine** represents my deep dive into quantit
 
 ---
 
-## 🚀 Methodology & Implementation
+## Methodology & Implementation
 
-### **📈 Synthetic FX Data Generation**
+### **Synthetic FX Data Generation**
 - The model generates **180 days of synthetic FX data** using geometric Brownian motion to simulate realistic currency movements
 - **Five major currencies analyzed**: USD, EUR, GBP, JPY, and an EM basket representing emerging market exposure
 - Each currency incorporates distinct **volatility and drift parameters** calibrated to historical market characteristics
 
-### **🏦 Multi-Currency Portfolio Construction**
+### **Multi-Currency Portfolio Construction**
 - Constructed a **$100M portfolio** with realistic global exposure reflecting typical institutional allocations
 - **Strategic allocation**: 45% USD, 25% EUR, 10% GBP, 12% JPY, 8% EM - designed to mirror institutional best practices
 - Incorporates both **local asset returns** and **currency translation effects** for comprehensive analysis
 
-### **🛡️ Hedging Strategy Analysis**
+### **Hedging Strategy Analysis**
 - Evaluates **three distinct approaches**: No hedging (full FX exposure), 50% hedged (balanced approach), 100% hedged (minimal FX risk)
 - **Incorporates realistic hedging costs** to provide accurate cost-benefit analysis
 - Demonstrates performance characteristics of each strategy across varying market conditions
 
-### **📊 Advanced Volatility Modeling**
+### **Advanced Volatility Modeling**
 - **ARIMA-GARCH framework** for sophisticated volatility forecasting beyond simple historical measures
 - **30-day forward volatility projections** to support strategic decision-making
 - **Volatility clustering identification** to capture the empirical reality of clustered market stress periods
 
-### **🚨 Comprehensive Stress Testing**
+### **Comprehensive Stress Testing**
 - **12 distinct crisis scenarios** including individual currency crashes, correlated market stress, and broad-based dollar movements
 - **Extreme market movements**: ±15% shocks reflecting actual historical episodes (Swiss franc unpegging, Turkish lira crisis, etc.)  
 - Tests hedge effectiveness when protection is most critical during market dislocations
 
-### **⚠️ Risk Metrics Framework**
+### **Risk Metrics Framework**
 - **VaR and CVaR calculations** at 95% and 99% confidence levels using industry-standard methodologies
 - **Multiple estimation approaches**: Historical simulation, parametric, and Monte Carlo methods for robustness
 - **Comprehensive performance metrics**: Sharpe ratios, maximum drawdown, hit rates, and downside deviation
 
 ---
 
-## 🧠 What I Learned Building This
+## What I Learned Building This
 
 ### **Diving Into Quantitative Finance Concepts**
 
@@ -67,7 +67,7 @@ This project became my hands-on education in quantitative finance methods I'd on
 
 ---
 
-## 📊 Visualization Framework
+## Visualization Framework
 
 The analysis includes **8 comprehensive visualizations** designed to effectively communicate key findings and support strategic decision-making. Representative examples include:
 
@@ -99,9 +99,9 @@ The analysis includes **8 comprehensive visualizations** designed to effectively
 
 ---
 
-## 💡 Key Findings & Analysis
+## Key Findings & Analysis
 
-### **🎯 What I Found (And What Surprised Me)**
+### **What I Found (And What Surprised Me)**
 
 **Results that caught my attention**:
 - **50% hedging beat full hedging** in most stress scenarios - I initially expected maximum protection to always be best, but partial hedging seems to capture upside while still providing protection
@@ -116,7 +116,7 @@ The analysis includes **8 comprehensive visualizations** designed to effectively
 
 **What This Taught Me**: Currency hedging is way more nuanced than I thought. There's no "right" answer - it's all about understanding the trade-offs and what risks you're willing to take.
 
-### **🚀 What I'd Improve & Where I'm Headed**
+### **What I'd Improve & Where I'm Headed**
 
 **Things I know need work**:
 - **Synthetic vs. real data** - I used simulated data to learn the concepts, but real historical data would capture the crazy stuff that actually happens in crises
@@ -137,7 +137,7 @@ This project opened my eyes to how deep quantitative finance goes. Every answer 
 
 ---
 
-## 🛠️ How to Run It
+## How to Run It
 
 ### **What You'll Need**
 - **Python 3.8+** (I built this on 3.9)
@@ -182,7 +182,7 @@ pip install numpy pandas matplotlib seaborn scipy statsmodels arch
 
 ---
 
-## ⚠️ The Fine Print
+## The Fine Print
 
 **This is all synthetic data** - I built this for learning and experimentation, not for making actual investment decisions.
 
@@ -193,7 +193,7 @@ pip install numpy pandas matplotlib seaborn scipy statsmodels arch
 
 ---
 
-## 🎯 Technical Skills Demonstrated
+## Technical Skills Demonstrated
 
 This simulation project demonstrates proficiency across multiple domains:
 
@@ -213,7 +213,7 @@ This simulation project demonstrates proficiency across multiple domains:
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 This was a fun project that taught me a lot about FX markets and hedging strategies. Some ideas for extending it:
 
@@ -231,4 +231,4 @@ Building this simulation pushed me to learn concepts I'd never worked with befor
 
 The work demonstrates my interest in quantitative finance and my ability to tackle complex analytical challenges, while also showing me how much more there is to explore in this field.
 
-**Core Technologies**: Python, Financial Modeling, Risk Management, GARCH/ARIMA, Portfolio Optimization, Data Visualization, Statistical Analysis 
+**Core Technologies**: Python, Financial Modeling, Risk Management, GARCH/ARIMA, Portfolio Optimization, Data Visualization, Statistical Analysis
