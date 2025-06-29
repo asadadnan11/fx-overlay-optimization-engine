@@ -84,12 +84,12 @@ The analysis includes **8 comprehensive visualizations** designed to effectively
 *Classical risk-return trade-off analysis quantifying the performance characteristics and opportunity costs of each hedging approach*
 
 **Full set of 8 main visualizations includes**:
-1. **FX Rates Evolution** - See how each currency moved over the 180 days ✓
-2. **Portfolio Value Evolution** - Compare how different hedging strategies actually performed ✓
+1. **FX Rates Evolution** - See how each currency moved over the 180 days
+2. **Portfolio Value Evolution** - Compare how different hedging strategies actually performed
 3. **Daily Returns Distribution** - Visualize the risk you're really taking with each approach
 4. **Rolling Volatility Analysis** - Watch volatility change over time (spoiler: it clusters)
 5. **Value at Risk Comparison** - See your maximum expected losses side by side
-6. **Risk-Return Profile** - The classic risk vs return scatter plot that actually matters ✓
+6. **Risk-Return Profile** - The classic risk vs return scatter plot that actually matters
 7. **Currency Contribution Analysis** - Find out which currencies are helping vs hurting
 8. **Drawdown Analysis** - See your worst losing streaks and how long they lasted
 
