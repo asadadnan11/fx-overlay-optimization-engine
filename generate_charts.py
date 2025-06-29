@@ -31,15 +31,15 @@ INITIAL_PORTFOLIO_VALUE = 100_000_000
 # Currency parameters
 currency_params = {
     'USD': {'initial_rate': 1.0000, 'annual_vol': 0.00, 'drift': 0.0000},
-    'EUR': {'initial_rate': 1.10, 'annual_vol': 0.10, 'drift': -0.001},  # round numbers from research
-    'GBP': {'initial_rate': 1.25, 'annual_vol': 0.12, 'drift': -0.001},
+    'EUR': {'initial_rate': 1.10, 'annual_vol': 0.12, 'drift': -0.001},  # round numbers from research
+    'GBP': {'initial_rate': 1.25, 'annual_vol': 0.14, 'drift': -0.001},
     'JPY': {'initial_rate': 0.007, 'annual_vol': 0.10, 'drift': -0.0005},  # roughly 140 USD/JPY
-    'EM_BASKET': {'initial_rate': 0.85, 'annual_vol': 0.15, 'drift': -0.002}  # EM usually more volatile
+    'EM_BASKET': {'initial_rate': 0.85, 'annual_vol': 0.20, 'drift': -0.002}  # EM usually more volatile
 }
 
 # Portfolio weights - looked up some global portfolio allocations online
 portfolio_weights = {
-    'USD': 0.50, 'EUR': 0.20, 'GBP': 0.10, 'JPY': 0.15, 'EM_BASKET': 0.05
+    'USD': 0.43, 'EUR': 0.20, 'GBP': 0.10, 'JPY': 0.15, 'EM_BASKET': 0.12
 }
 
 def generate_fx_rates(currencies, params, days, start_date):
